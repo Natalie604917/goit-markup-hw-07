@@ -466,11 +466,11 @@ img {
   margin-right: auto;
 }
 
-.button-flex:not(:last-child) {
+.filters__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-primary {
+.filter__primary {
   color: var(--title-text);
   background-color: var(--secondary-background);
   font-family: 'Roboto', sans-serif;
@@ -486,8 +486,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-primary:hover,
-.filter-primary:focus {
+.filter__primary:hover,
+.filter__primary:focus {
   color: var(--primary-white);
   background-color: var(--accent);
 
@@ -518,24 +518,24 @@ img {
 
 /* стр.Портфолио/галерея работ */
 
-.work-item {
+.works__item {
   --grid__item: 3;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-item:hover {
+.works__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work-link {
+.works__link {
   text-decoration: none;
   display: inline-block;
 }
 
-.work-title {
+.works__title {
   color: var(--title-text);
   font-weight: 700;
   font-size: 18px;
@@ -544,28 +544,28 @@ img {
   padding-bottom: 4px;
 }
 
-.work-text {
+.works__text {
   color: var(--primary-text);
   font-size: 16px;
   line-height: 1.88;
 }
-.work-content {
+.works__content {
   padding: 20px 24px;
 }
-.product-thumb {
+.works__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.work-link:hover .work-gallery__actions {
+.works__link:hover .works__actions {
   opacity: 1;
 }
 
-.work-link:hover .product-thumb::before {
+.works__link:hover .works__wrapper::before {
   transform: translateY(0%);
 }
 
-.product-thumb::before {
+.works__wrapper::before {
   display: inline-block;
   position: absolute;
   content: '';
@@ -580,11 +580,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-thumb:hover::before {
+.works__wrapper:hover::before {
   opacity: 1;
 }
 
-.work-gallery__actions {
+.works__actions {
   position: absolute;
   top: 50%;
   left: 50%;

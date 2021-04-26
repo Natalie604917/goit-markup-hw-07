@@ -66,16 +66,16 @@
   fill: var(--accent);
 }
 
-.work-link {
+.works__link {
   text-decoration: none;
   display: inline-block;
 }
 
-.work-link:hover .work-gallery__actions {
+.works__link:hover .works__actions {
   opacity: 1;
 }
 
-.work-link:hover .product-thumb::before {
+.works__link:hover .works__wrapper::before {
   transform: translateY(0%);
 }
 
