@@ -39,15 +39,9 @@
   }
 }
 
-.adds__link--white {
-  font-weight: 400;
-  line-height: 2;
-  padding: 0;
+.adds__link--light {
+  @extend .adds__link;
   color: var(--primary-white);
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
 }
 
 .footer-page__secondary-title {

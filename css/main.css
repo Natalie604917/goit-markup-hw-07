@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -284,6 +283,21 @@ summary {
   --modal-border-color: rgba(33, 33, 33, 0.2);
   --placeholder-color: rgba(117, 117, 117, 0.5);
   --grid__item: 1;
+}
+
+.adds__link, .adds__link--light {
+  font-weight: 400;
+  line-height: 2;
+  padding: 0;
+  color: var(--footer-accent);
+}
+
+.adds__link:hover, .adds__link--light:hover, .adds__link:focus, .adds__link--light:focus {
+  color: var(--accent);
+}
+
+.socials__icon--light {
+  fill: var(--primary-white);
 }
 
 html {
@@ -579,7 +593,7 @@ img {
   fill: var(--icon-color);
 }
 
-.socials__icon--white {
+.socials__icon--light {
   fill: var(--primary-white);
 }
 
@@ -906,14 +920,6 @@ label {
   background-color: var(--secondary-background);
 }
 
-.team-list__item {
-  --grid__item: 4;
-  background-color: var(--primary-white);
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
 .team-list__title {
   color: var(--title-text);
   font-weight: 500;
@@ -922,16 +928,24 @@ label {
   padding-bottom: 10px;
 }
 
-.team-list__text {
-  font-size: 16px;
-  line-height: 1.19;
-  padding-bottom: 16px;
-  color: var(--primary-text);
+.team-list__item {
+  --grid__item: 4;
+  background-color: var(--primary-white);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list__content {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-list__text {
+  font-size: 16px;
+  line-height: 1.19;
+  padding-bottom: 16px;
+  color: var(--primary-text);
 }
 
 .team-list__link:hover,
@@ -1070,26 +1084,19 @@ label {
   padding-bottom: 9px;
 }
 
-.adds__link {
+.adds__link, .adds__link--light {
   font-weight: 400;
   line-height: 2;
   padding: 0;
   color: var(--footer-accent);
 }
 
-.adds__link:hover, .adds__link:focus {
+.adds__link:hover, .adds__link--light:hover, .adds__link:focus, .adds__link--light:focus {
   color: var(--accent);
 }
 
-.adds__link--white {
-  font-weight: 400;
-  line-height: 2;
-  padding: 0;
+.adds__link--light {
   color: var(--primary-white);
-}
-
-.adds__link--white:hover, .adds__link--white:focus {
-  color: var(--accent);
 }
 
 .footer-page__secondary-title {
@@ -1104,17 +1111,4 @@ label {
 .socials__link--dark:hover, .socials__link--dark:focus {
   background-color: var(--accent);
 }
-
-/* Логотип */
-/* Навигация */
-/* Контакты в шапке */
-/* стр.Студия/ Hero */
-/*  Все заголовки  h2 */
-/* Чем мы занимаемся */
-/* стр.Студия/ Команда */
-/* стр.Студия/ Постоянные клиенты */
-/* стр.Портфолио/фильтры-кнопки */
-/* стр.Портфолио/галерея работ */
-/* Адрес в подвале */
-/* Модальное окно */
 /*# sourceMappingURL=main.css.map */
