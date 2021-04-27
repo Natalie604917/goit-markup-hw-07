@@ -101,7 +101,7 @@
   background-color: var(--footerbg-icon-color);
 }
 
-.modal-link {
+.modal__link {
   color: var(--accent);
 }
 
@@ -128,4 +128,13 @@
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
+}
+.modal__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-text);
+  margin-bottom: 30px;
 }

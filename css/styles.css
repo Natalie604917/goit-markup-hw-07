@@ -116,8 +116,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.accent__link:hover,
-.accent__link:focus {
+.:hover,
+.:focus {
   background-color: var(--accent);
 }
 /* Логотип */
@@ -774,7 +774,7 @@ img {
   width: 448px;
 }
 
-.modal-text {
+.modal__text {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -784,7 +784,7 @@ img {
   margin-bottom: 30px;
 }
 
-.modal-link {
+.modal__link {
   color: var(--accent);
 }
 
@@ -792,7 +792,7 @@ textarea {
   resize: none;
 }
 
-.form-field textarea::placeholder {
+.modal-form__field textarea::placeholder {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.14;
@@ -800,18 +800,18 @@ textarea {
   color: var(--placeholder-color);
 }
 
-.form-field:nth-last-child(3) {
+.modal-form__field:nth-last-child(3) {
   margin-bottom: 20px;
 }
 
-.form-field {
+.modal-form__field {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 28px;
 }
 
-.form-input {
+.modal-form__input {
   width: 100%;
   margin: 0;
   padding-left: 42px;
@@ -825,16 +825,16 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:nth-last-child(2) {
+.modal-form__input:nth-last-child(2) {
   padding: 12px 16px;
 }
 
-.form-input:focus {
+.modal-form__input:focus {
   outline: none;
   border-color: var(--accent);
 }
 
-.form-text {
+.modal-form__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -848,11 +848,11 @@ textarea {
 }
 
 /* ( 1 вариант фокуса иконки)
-.form-input:focus ~ .label-icon {
+.modal-form__input:focus ~ .modal-form__icon {
   fill: var(--accent);
 }  */
 
-.form-field:focus-within .label-icon {
+.modal-form__field:focus-within .modal-form__icon {
   fill: var(--accent);
 }
 
@@ -861,7 +861,7 @@ label {
   align-items: center;
 }
 
-.label-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -872,26 +872,13 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input {
-  /* appearance: none; */
-  position: absolute;
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-.checkbox-text,
-.modal-link {
+.checkbox__text,
+.modal__link {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.label-icon-checkbox {
+.modal-form__icon-checkbox {
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text);
@@ -902,7 +889,7 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input:checked + .label-icon-checkbox {
+.checkbox__input:checked + .modal-form__icon-checkbox {
   background-color: var(--accent);
   background-image: url(../images/icons.svg#icon-icon-check-2);
   background-size: contain;
