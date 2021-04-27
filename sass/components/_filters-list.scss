@@ -1,0 +1,15 @@
+.filters {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.filters__list {
+  min-width: 611px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}

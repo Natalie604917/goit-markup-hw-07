@@ -1,6 +1,7 @@
 .contacts {
   margin-left: auto;
 }
+
 .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -9,12 +10,12 @@
   display: flex;
   align-items: center;
   color: var(--primary-text);
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent);
-  stroke: var(--accent);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+    stroke: var(--accent);
+  }
 }
 
 .contacts__icon {

@@ -12,10 +12,10 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.filter-primary:hover,
-.filter-primary:focus {
+
+  &:hover,
+  &:focus {
   color: var(--primary-white);
   background-color: var(--accent);
 
@@ -59,8 +59,9 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-button:hover,
-.modal-button:focus {
-  fill: var(--accent);
+
+  &:hover,
+  &:focus{
+   fill: var(--accent);
+ }
 }

@@ -9,18 +9,16 @@
   margin-right: 50px;
 }
 
-.menu__link:hover,
-.menu__link--active:hover,
-.menu__link:focus,
-.menu__link--active:focus {
-  color: var(--accent);
-}
-
 .menu__link,
 .menu__link--active {
   position: relative;
   display: block;
   color: var(--title-text);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 .menu__link--active::after {
