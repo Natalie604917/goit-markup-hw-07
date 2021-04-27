@@ -277,11 +277,10 @@ img {
 
 .secondary-title {
   text-transform: uppercase;
-  color: var(--primary-white);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-bottom: 20px;
 }
 
 /*стр.Студия/ Особенности */
@@ -295,13 +294,8 @@ img {
   --grid__item: 4;
 }
 
-.feature__title {
+.feature__secondary-title {
   color: var(--title-text);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-
   padding-bottom: 10px;
 }
 
@@ -480,7 +474,7 @@ img {
   margin-right: 8px;
 }
 
-.filter__primary {
+.filter-primary {
   color: var(--title-text);
   background-color: var(--secondary-background);
   font-family: 'Roboto', sans-serif;
@@ -496,8 +490,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__primary:hover,
-.filter__primary:focus {
+.filter-primary:hover,
+.filter-primary:focus {
   color: var(--primary-white);
   background-color: var(--accent);
 
@@ -505,7 +499,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filter__secondary {
+.filter-secondary {
   color: var(--primary-white);
   background-color: var(--accent);
   font-family: 'Roboto', sans-serif;
@@ -614,12 +608,6 @@ img {
 
 /* Адрес в подвале */
 
-.adds-list {
-  display: block;
-  padding-top: 20px;
-  padding-left: 0;
-}
-
 .footer-page {
   background-color: var(--primary-background);
   padding-top: 60px;
@@ -640,6 +628,16 @@ img {
   justify-content: flex-start;
 }
 
+.adds-list {
+  display: block;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.adds__item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
 .adds__link {
   font-style: normal;
   font-weight: 400;
@@ -652,18 +650,14 @@ img {
   color: var(--footer-accent);
 }
 
-.adds-list .adds__item:not(:last-child) {
-  padding-bottom: 9px;
-}
-
-.accent__link:hover,
-.accent__link:focus {
-  background-color: var(--accent);
-}
-
-.location:hover,
-.location:focus {
+.adds__link:hover,
+.adds__link:focus {
   color: var(--accent);
+}
+
+.footer-page__secondary-title {
+  color: var(--primary-white);
+  margin-bottom: 20px;
 }
 
 .mailing-form {
@@ -694,7 +688,7 @@ img {
   margin-right: 12px;
 }
 
-.mailing__wrapper > .filter-secondary {
+.footer-page__filter-secondary {
   padding-left: 29px;
   margin: 0;
   text-align: left;
