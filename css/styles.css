@@ -105,6 +105,7 @@ img {
 
 .link {
   text-decoration: none;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -116,10 +117,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.:hover,
-.:focus {
-  background-color: var(--accent);
-}
 /* Логотип */
 
 .header-page__logo {
@@ -558,10 +555,6 @@ img {
   overflow: hidden;
 }
 
-.works__link:hover .works__actions {
-  opacity: 1;
-}
-
 .works__link:hover .works__wrapper::before {
   transform: translateY(0%);
 }
@@ -581,6 +574,9 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.works__link:hover .works__actions {
+  opacity: 1;
+}
 .works__wrapper:hover::before {
   opacity: 1;
 }
@@ -636,11 +632,10 @@ img {
 }
 
 .adds__link {
-  font-style: normal;
   font-weight: 400;
   line-height: 2;
   padding: 0;
-  color: var(--primary-white);
+  color: var(--footer-accent);
 }
 
 .footer-page__adds__link {
@@ -657,16 +652,16 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-page__link {
+.socials__link--dark {
   background-color: var(--footerbg-icon-color);
 }
 
-.footer-page__link:hover,
-.footer-page__link:focus {
+.socials__link--dark:hover,
+.socials__link--dark:focus {
   background-color: var(--accent);
 }
 
-.footer-page__icon {
+.socials__icon--white {
   fill: var(--primary-white);
 }
 
