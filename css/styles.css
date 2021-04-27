@@ -380,6 +380,11 @@ img {
   padding-bottom: 30px;
 }
 
+.team-list__link:hover,
+.team-list__link:focus {
+  background-color: var(--accent);
+}
+
 .socials {
   justify-content: center;
 }
@@ -421,12 +426,6 @@ img {
   fill: var(--primary-white);
 }
 
-/* только для команды и футераб без кдиентов */
-/* .socials__link:hover,
-.socials__link:focus {
-  background-color: var(--accent);
-} */
-
 /* стр.Студия/ Постоянные клиенты */
 
 .clients__item {
@@ -446,7 +445,8 @@ img {
   border-color: var(--accent);
 }
 
-.clients__socials__link:hover .socials__icon {
+.clients__socials__link:hover .socials__icon,
+.clients__socials__link:focus .socials__icon {
   fill: var(--accent);
 }
 
@@ -625,6 +625,18 @@ img {
   justify-content: flex-start;
 }
 
+.footer-page__link {
+  background-color: var(--footerbg-icon-color);
+}
+
+.footer-page__link:hover,
+.footer-page__link:focus {
+  background-color: var(--accent);
+}
+
+.footer-page__icon {
+  fill: var(--primary-white);
+}
 .adds-list {
   display: block;
   padding-top: 20px;
@@ -699,10 +711,6 @@ img {
   right: 28px;
   bottom: 13px;
   fill: var(--primary-white);
-}
-
-.socials__link {
-  background-color: var(--footerbg-icon-color);
 }
 
 /* Модальное окно */
