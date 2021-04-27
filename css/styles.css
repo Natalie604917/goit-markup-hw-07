@@ -621,22 +621,10 @@ img {
   flex-basis: calc((50% - 45px) / 2);
 }
 
-.footer-page__wrapper > .socials {
+.footer-page__wrapper__socials {
   justify-content: flex-start;
 }
 
-.footer-page__link {
-  background-color: var(--footerbg-icon-color);
-}
-
-.footer-page__link:hover,
-.footer-page__link:focus {
-  background-color: var(--accent);
-}
-
-.footer-page__icon {
-  fill: var(--primary-white);
-}
 .adds-list {
   display: block;
   padding-top: 20px;
@@ -667,6 +655,19 @@ img {
 .footer-page__secondary-title {
   color: var(--primary-white);
   margin-bottom: 20px;
+}
+
+.footer-page__link {
+  background-color: var(--footerbg-icon-color);
+}
+
+.footer-page__link:hover,
+.footer-page__link:focus {
+  background-color: var(--accent);
+}
+
+.footer-page__icon {
+  fill: var(--primary-white);
 }
 
 .mailing-form {
