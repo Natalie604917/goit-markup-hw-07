@@ -9,10 +9,10 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients__item:hover {
-  border-color: var(--accent);
+  &:hover {
+    border-color: var(--accent);
+  }
 }
 
 .clients__socials__link:hover .socials__icon,
