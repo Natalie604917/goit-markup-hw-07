@@ -1,0 +1,40 @@
+.menu {
+  display: inline-flex;
+  margin-left: 93px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu__link:hover,
+.menu__link--active:hover,
+.menu__link:focus,
+.menu__link--active:focus {
+  color: var(--accent);
+}
+
+.menu__link,
+.menu__link--active {
+  position: relative;
+  display: block;
+  color: var(--title-text);
+}
+
+.menu__link--active::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}

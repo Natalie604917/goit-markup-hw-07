@@ -1,0 +1,19 @@
+.footer-page {
+  background-color: var(--primary-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-page__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-page__wrapper {
+  flex-basis: calc((50% - 45px) / 2);
+}
+
+.footer-page__wrapper__socials {
+  justify-content: flex-start;
+}

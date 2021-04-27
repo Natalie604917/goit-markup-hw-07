@@ -1,0 +1,10 @@
+.page-header {
+  background-color: var(--primary-white);
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.page-header__container,
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+}

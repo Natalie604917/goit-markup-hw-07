@@ -1,0 +1,14 @@
+.socials__icon {
+  fill: var(--icon-color);
+}
+
+.socials__link .socials__icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: var(--primary-white);
+}
