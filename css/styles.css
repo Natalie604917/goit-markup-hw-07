@@ -621,7 +621,7 @@ img {
   justify-content: flex-start;
 }
 
-.adds-list {
+.adds {
   display: block;
   padding-top: 20px;
   padding-left: 0;
@@ -638,11 +638,16 @@ img {
   color: var(--footer-accent);
 }
 
-.footer-page__adds__link {
-  color: var(--footer-accent);
+.adds__link--white {
+  font-weight: 400;
+  line-height: 2;
+  padding: 0;
+  color: var(--primary-white);
 }
 
 .adds__link:hover,
+.adds__link--white:hover,
+.adds__link--white:focus,
 .adds__link:focus {
   color: var(--accent);
 }
@@ -693,11 +698,12 @@ img {
   margin-right: 12px;
 }
 
-.footer-page__filter-secondary {
+.filter-secondary--mail {
   padding-left: 29px;
   margin: 0;
   text-align: left;
 }
+
 .mailing__wrapper {
   position: relative;
 }
