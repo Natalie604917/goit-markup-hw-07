@@ -18,6 +18,13 @@
 
 textarea {
   resize: none;
+  &::placeholder {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+  }
 }
 
 .modal-form__field {
@@ -25,14 +32,6 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 28px;
-
-  &textarea::placeholder {
-    font-family: Roboto;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: var(--placeholder-color);
-  }
 
   &:focus-within .modal-form__icon {
     fill: var(--accent);
@@ -111,7 +110,7 @@ label {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:checked {
+  .checkbox__input:checked + & {
     background-color: var(--accent);
     background-image: url(../images/icons.svg#icon-icon-check-2);
     background-size: contain;

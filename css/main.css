@@ -655,19 +655,19 @@ textarea {
   resize: none;
 }
 
-.modal-form__field {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 28px;
-}
-
-.modal-form__fieldtextarea::placeholder {
+textarea::placeholder {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
+}
+
+.modal-form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
 }
 
 .modal-form__field:focus-within .modal-form__icon {
@@ -743,7 +743,7 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form__icon-checkbox:checked {
+.checkbox__input:checked + .modal-form__icon-checkbox {
   background-color: var(--accent);
   background-image: url(../images/icons.svg#icon-icon-check-2);
   background-size: contain;
