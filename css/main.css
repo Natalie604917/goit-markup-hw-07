@@ -93,6 +93,25 @@ img {
   margin-right: auto;
 }
 
+.logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-page__logo {
+  color: var(--title-text);
+}
+
+.footer-page__logo {
+  color: var(--primary-white);
+}
+
 .filter-primary {
   color: var(--title-text);
   background-color: var(--secondary-background);
@@ -154,25 +173,6 @@ img {
 }
 
 /* Логотип */
-.header-page__logo {
-  color: var(--title-text);
-}
-
-.footer-page__logo {
-  color: var(--primary-white);
-}
-
-.logo {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 /* Навигация */
 .page-header {
   background-color: var(--primary-white);
