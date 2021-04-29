@@ -494,7 +494,8 @@ img {
   color: var(--accent);
 }
 
-.menu__link--active::after {
+.menu__link--active::after,
+.menu__link--active--active::after {
   position: absolute;
   content: " ";
   display: block;
